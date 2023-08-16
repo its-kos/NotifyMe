@@ -1,5 +1,5 @@
-import discord
 import os # default module
+import discord
 from dotenv import load_dotenv
 
 load_dotenv() # load all the variables from the env file
@@ -14,3 +14,4 @@ async def hello(ctx):
     await ctx.respond("Hey!")
 
 bot.run(os.getenv('TOKEN')) # run the bot with the token
+
